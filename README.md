@@ -31,7 +31,7 @@ O dataset agrega **1.035+ registros** de 5 fontes diferentes:
 |-------|---------------|--------|-----------------|
 | **GitHub** | Issues, Pull Requests, Comentários | ~750+ registros | Mar/2023 - Mai/2025 |
 | **Hacker News** | Stories, Comentários | ~250+ registros | 2023 - 2025 |
-| **Reddit** | Posts, Comentários | ~20+ registros | 2009 - 2024 |
+| **Reddit** | Posts, Comentários | ~20+ registros | 2023 - 2024 |
 | **Stack Overflow** | Perguntas, Respostas | 0* (API limitada) | - |
 | **Google Groups** | Threads, Mensagens | 0* (robots.txt) | - |
 
