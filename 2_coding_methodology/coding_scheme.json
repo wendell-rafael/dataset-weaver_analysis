@@ -1,0 +1,147 @@
+{
+  "version": "1.0",
+  "description": "Hierarchical coding scheme for Service Weaver post-mortem analysis",
+  "categories": {
+    "DESIGN_ARCHITECTURE": {
+      "description": "Architectural and design-level issues",
+      "sub_codes": {
+        "RPC_CORBA_PROBLEM": {
+          "description": "Issues related to RPC/CORBA-like patterns",
+          "examples": ["tight coupling via RPC", "synchronous communication bottlenecks"]
+        },
+        "COMPONENT_COUPLING": {
+          "description": "Excessive coupling between components",
+          "examples": ["difficult to test in isolation", "changes cascade across components"]
+        },
+        "ALL_OR_NOTHING_DEPLOYMENT": {
+          "description": "Deployment model requires all-or-nothing approach",
+          "examples": ["cannot deploy single service", "monolithic deployment constraints"]
+        },
+        "INADEQUATE_ABSTRACTIONS": {
+          "description": "Framework abstractions don't match real-world needs",
+          "examples": ["abstraction leaks", "forced to work around framework limitations"]
+        }
+      }
+    },
+    "USABILITY_DX": {
+      "description": "Developer experience and usability issues",
+      "sub_codes": {
+        "LEARNING_CURVE": {
+          "description": "Steep learning curve or conceptual complexity",
+          "examples": ["hard to understand", "requires paradigm shift", "confusing mental model"]
+        },
+        "COMPLEX_CONFIGURATION": {
+          "description": "Configuration is complex or error-prone",
+          "examples": ["too many config options", "unclear defaults", "hard to debug config"]
+        },
+        "DEBUGGING_DIFFICULTY": {
+          "description": "Difficult to debug or troubleshoot",
+          "examples": ["opaque error messages", "hard to trace execution", "poor logging"]
+        },
+        "INSUFFICIENT_DOCUMENTATION": {
+          "description": "Documentation gaps or quality issues",
+          "examples": ["missing examples", "outdated docs", "unclear API documentation"]
+        },
+        "WEAVER_GENERATE_FRICTION": {
+          "description": "Issues with code generation (weaver generate)",
+          "examples": ["slow generation", "generated code is confusing", "breaks IDE features"]
+        }
+      }
+    },
+    "ECOSYSTEM_INTEROP": {
+      "description": "Ecosystem integration and interoperability issues",
+      "sub_codes": {
+        "LACK_MULTILANGUAGE": {
+          "description": "Go-only; no multi-language support",
+          "examples": ["cannot integrate with Python/Java services", "Go-only limitation"]
+        },
+        "CI_CD_INTEGRATION": {
+          "description": "Difficult to integrate with CI/CD pipelines",
+          "examples": ["slow builds", "complex deployment pipelines", "hard to automate"]
+        },
+        "LIMITED_OBSERVABILITY": {
+          "description": "Observability and monitoring limitations",
+          "examples": ["metrics not standard", "tracing incomplete", "hard to integrate APM"]
+        },
+        "VENDOR_LOCK_IN": {
+          "description": "Perceived or actual vendor lock-in",
+          "examples": ["Google-specific patterns", "hard to migrate away", "cloud lock-in"]
+        },
+        "TOOLING_IMMATURITY": {
+          "description": "Immature or missing tooling",
+          "examples": ["no IDE plugins", "missing dev tools", "poor CLI ergonomics"]
+        }
+      }
+    },
+    "PERFORMANCE_SCALE": {
+      "description": "Performance and scalability concerns",
+      "sub_codes": {
+        "RUNTIME_OVERHEAD": {
+          "description": "Performance overhead from framework",
+          "examples": ["slower than alternatives", "high latency", "resource intensive"]
+        },
+        "GRANULARITY_ISSUES": {
+          "description": "Wrong level of granularity (too fine/coarse)",
+          "examples": ["too many small components", "components too large"]
+        },
+        "SPECIFIC_BOTTLENECKS": {
+          "description": "Identified performance bottlenecks",
+          "examples": ["serialization overhead", "network chattiness", "lock contention"]
+        },
+        "TRADE_OFF_CONCERNS": {
+          "description": "Performance trade-offs not acceptable",
+          "examples": ["complexity not worth perf gains", "marginal improvements"]
+        }
+      }
+    },
+    "COMMUNITY_ADOPTION": {
+      "description": "Community engagement and adoption issues",
+      "sub_codes": {
+        "LACK_ENGAGEMENT": {
+          "description": "Low community activity or engagement",
+          "examples": ["few contributors", "inactive issues", "no external advocates"]
+        },
+        "PARADIGM_RESISTANCE": {
+          "description": "Resistance to framework's paradigm/approach",
+          "examples": ["developers prefer existing patterns", "unfamiliar concepts"]
+        },
+        "ALTERNATIVE_PREFERRED": {
+          "description": "Existing alternatives are preferred",
+          "examples": ["gRPC is simpler", "Kubernetes solves this", "standard patterns work"]
+        },
+        "UNCLEAR_VALUE_PROPOSITION": {
+          "description": "Value proposition not clear or compelling",
+          "examples": ["why use this?", "what problem does it solve?", "not different enough"]
+        }
+      }
+    },
+    "POST_MORTEM_ANALYSIS": {
+      "description": "Meta-category for retrospective analysis",
+      "sub_codes": {
+        "ROOT_CAUSE_IDENTIFIED": {
+          "description": "Author explicitly identifies root cause",
+          "examples": ["issue marked as root cause", "clear causal explanation"]
+        },
+        "CONTRIBUTING_FACTOR": {
+          "description": "Acknowledged as contributing to problems",
+          "examples": ["made situation worse", "compounded other issues"]
+        },
+        "SPECULATION_ON_FAILURE": {
+          "description": "Speculation about why project failed",
+          "examples": ["hypothesizing discontinuation reasons", "discussion of what went wrong"]
+        }
+      }
+    }
+  },
+  "coding_rules": {
+    "primary_code": "Assign the most prominent/relevant category",
+    "secondary_code": "Optional; assign if 2+ categories apply significantly",
+    "confidence_score": "0.0-1.0; 1.0 = very confident, 0.5 = ambiguous",
+    "edge_cases": {
+      "multiple_themes": "Code all significant themes; use primary + secondary",
+      "ambiguous": "Mark confidence < 0.7 and note reasoning",
+      "meta_discussion": "Use POST_MORTEM_ANALYSIS if discussing failure itself",
+      "feature_request": "Code based on underlying problem, not request itself"
+    }
+  }
+}
