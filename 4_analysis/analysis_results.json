@@ -1,0 +1,24 @@
+{
+  "total_records": 1035,
+  "sources": {
+    "github_pr": 615,
+    "hackernews_comment": 165,
+    "github_issue": 139,
+    "hackernews_story": 94,
+    "reddit": 22
+  },
+  "temporal_periods": {
+    "early_adoption": 420,
+    "plateau": 336,
+    "pre_launch": 235,
+    "decline": 30,
+    "post_discontinuation": 14
+  },
+  "resolution_status": {
+    "unknown": 885,
+    "acknowledged_not_fixed": 150
+  },
+  "root_cause_categories": {
+    "unclear": 1035
+  }
+}

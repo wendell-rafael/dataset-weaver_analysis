@@ -1,0 +1,36 @@
+{
+  "total_records": 1169,
+  "primary_codes_distribution": {
+    "ECOSYSTEM_001_lib_compatibility": 609,
+    "DESIGN_001_deployment_complexity": 278,
+    "USABILITY_001_learning_curve": 257,
+    "USABILITY_003_doc_quality": 17,
+    "DESIGN_002_communication_overhead": 8
+  },
+  "root_causes_distribution": {
+    "ecosystem_maturity": 609,
+    "technical_design": 286,
+    "developer_experience": 274
+  },
+  "resolution_status": {
+    "fixed": 832,
+    "open": 124,
+    "wontfix": 108,
+    "abandoned": 105
+  },
+  "temporal_distribution": {
+    "early_adoption": 556,
+    "post_discontinuation": 290,
+    "plateau": 166,
+    "pre_launch": 80,
+    "decline": 77
+  },
+  "average_confidence": 0.8483404619332764,
+  "key_metrics": {
+    "ecosystem_issues": 609,
+    "technical_issues": 0,
+    "developer_experience_issues": 274,
+    "unresolved_issues": 124,
+    "post_discontinuation_discussions": 290
+  }
+}
