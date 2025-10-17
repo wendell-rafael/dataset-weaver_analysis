@@ -1,0 +1,22 @@
+# Configuration Example
+# Copy this file to config.yaml and fill in your credentials
+
+# GitHub API
+github:
+  token: "your_github_token_here"
+
+# Reddit API
+reddit:
+  client_id: "your_client_id"
+  client_secret: "your_client_secret"
+  user_agent: "your_user_agent"
+
+# Data Collection
+collection:
+  max_results: 100
+  date_range: 30  # days
+
+# Analysis
+analysis:
+  confidence_level: 0.95
+  min_sample_size: 30
