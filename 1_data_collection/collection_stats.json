@@ -1,0 +1,42 @@
+[
+  {
+    "scraper": "GitHubScraper",
+    "status": "success",
+    "records_collected": 754,
+    "errors": 0,
+    "elapsed_seconds": 110.59,
+    "error_details": []
+  },
+  {
+    "scraper": "StackOverflowScraper",
+    "status": "success",
+    "records_collected": 0,
+    "errors": 0,
+    "elapsed_seconds": 14.27,
+    "error_details": []
+  },
+  {
+    "scraper": "RedditScraper",
+    "status": "success",
+    "records_collected": 22,
+    "errors": 0,
+    "elapsed_seconds": 33.99,
+    "error_details": []
+  },
+  {
+    "scraper": "HackerNewsScraper",
+    "status": "success",
+    "records_collected": 259,
+    "errors": 0,
+    "elapsed_seconds": 183.6,
+    "error_details": []
+  },
+  {
+    "scraper": "GoogleGroupsScraper",
+    "status": "success",
+    "records_collected": 0,
+    "errors": 0,
+    "elapsed_seconds": 0.61,
+    "error_details": []
+  }
+]
