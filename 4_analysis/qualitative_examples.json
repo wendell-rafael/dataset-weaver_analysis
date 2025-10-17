@@ -1,0 +1,256 @@
+{
+  "resolution_unknown": [
+    {
+      "resolution_status": "unknown",
+      "source": "github_pr",
+      "timestamp": "2024-02-14T22:59:51Z",
+      "author": "User_37c24b1b",
+      "quote": "Expose the deployment identifier to the application.\\n\\nThis was a feature requested by one of our users so that they can distinct between multiple deployments of the same application. As far as the user is concerned, the string is an opaque identifier they can use to compare different deployments..",
+      "root_cause": "unclear",
+      "url": "https://github.com/ServiceWeaver/weaver/pull/726"
+    },
+    {
+      "resolution_status": "unknown",
+      "source": "hackernews_comment",
+      "timestamp": "2023-03-01T21:18:02",
+      "author": "User_dbdca521",
+      "quote": "There has never been any issues with hiding distributed RPC calls.<p><a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Fallacies_of_distributed_computing\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Fallacies_of_distributed_compu...</a>.",
+      "root_cause": "unclear",
+      "url": "https://news.ycombinator.com/item?id=34990261"
+    },
+    {
+      "resolution_status": "unknown",
+      "source": "github_pr",
+      "timestamp": "2023-02-21T17:51:02Z",
+      "author": "User_030a8471",
+      "quote": "remove online_boutique binary from the repo\\n\\n.",
+      "root_cause": "unclear",
+      "url": "https://github.com/ServiceWeaver/weaver/pull/49"
+    },
+    {
+      "resolution_status": "unknown",
+      "source": "hackernews_story",
+      "timestamp": "2016-12-13T17:09:34Z",
+      "author": "User_73de1eec",
+      "quote": "Announcing Updates to Google’s Internet of Things Platform\\n\\n\\n\\nURL: https://developers.googleblog.com/2016/12/announcing-googles-new-internet-of-things-platform-with-weave-and-android-things.html.",
+      "root_cause": "unclear",
+      "url": "https://news.ycombinator.com/item?id=13168392"
+    },
+    {
+      "resolution_status": "unknown",
+      "source": "github_pr",
+      "timestamp": "2023-05-15T18:07:36Z",
+      "author": "User_d6dd8072",
+      "quote": "Remove incorrect TODO (we need many handlers per deployer).\\n\\n.",
+      "root_cause": "unclear",
+      "url": "https://github.com/ServiceWeaver/weaver/pull/336"
+    }
+  ],
+  "resolution_acknowledged_not_fixed": [
+    {
+      "resolution_status": "acknowledged_not_fixed",
+      "source": "github_issue",
+      "timestamp": "2023-06-01T07:42:30Z",
+      "author": "User_31f17fa7",
+      "quote": "runner.Test undefined (type weavertest.Runner has no field or method Test\\n\\nI'm running weaver v0.12. I followed the [official documentation](https://serviceweaver.dev/docs.html#testing) to create tests. I use a similar code:\r\n\r\n```\r\nfunc TestAdd(t *testing.T) {\r\n     runner := weavertest.Local  // A runner that runs components in a single process\r\n     runner.Test(t, func(t *testing.T, adder Adder) {\r\n         ctx := context.Background()\r\n         got, err := adder.Add(ctx, 1, 2)\r\n         if err != nil {\r\n             t.Fatal(err)\r\n         }\r\n         if want := 3; got != want {\r\n             t.Fatalf(\"got %q, want %q\", got, want)\r\n         }\r\n     })\r\n}\r\n```\r\n\r\nIt seems like weavertest.Local.Test does not exist.",
+      "root_cause": "unclear",
+      "url": "https://github.com/ServiceWeaver/weaver/issues/369"
+    },
+    {
+      "resolution_status": "acknowledged_not_fixed",
+      "source": "github_issue",
+      "timestamp": "2023-03-03T20:49:40Z",
+      "author": "User_3f553b21",
+      "quote": "Enabling the errcheck linter\\n\\nCongratulations on the first release. ServiceWeaver looks very interesting and I'm looking for ways to contribute. I noticed that `errcheck` is disabled with a comment about too many errors. I've found this linter to be useful because unhandled errors can often cause bugs. Would you be interested in a few small PRs to fix or ignore the current warnings so that the `errcheck` linter can be enabled. I'll leave some more detail in a comment below about how I'd approach that change.",
+      "root_cause": "unclear",
+      "url": "https://github.com/ServiceWeaver/weaver/issues/90"
+    },
+    {
+      "resolution_status": "acknowledged_not_fixed",
+      "source": "github_issue",
+      "timestamp": "2023-03-02T19:19:14Z",
+      "author": "User_c8577b9e",
+      "quote": "",
+      "root_cause": "unclear",
+      "url": "https://github.com/ServiceWeaver/weaver/issues/81"
+    },
+    {
+      "resolution_status": "acknowledged_not_fixed",
+      "source": "hackernews_story",
+      "timestamp": "2023-01-25T22:38:32Z",
+      "author": "User_ee03f29d",
+      "quote": "Ask HN: Expat software engineers in Japan, how are you making it happen?\\n\\nThere seems to be a lot of desire for software engineers to live and work in Japan, at least some fairly passionate minority of people. I also see people on HN pop up from time to time and describe the fact that they live and work in Japan; I suspect most are expats, tho I may be totally wrong here. :)<p>I&#x27;m wondering: How are you all pulling it off.",
+      "root_cause": "unclear",
+      "url": "https://news.ycombinator.com/item?id=34525144"
+    },
+    {
+      "resolution_status": "acknowledged_not_fixed",
+      "source": "github_issue",
+      "timestamp": "2024-02-20T06:27:38Z",
+      "author": "User_d75bf78d",
+      "quote": "looking forward to update component interface \\n\\nWe currently have a set of microservices. On the premise of ensuring the workload of maintenance, we hope to make a version that merges services. However, we encountered a problem. The original microservices used gRPC to call each other. When migrating to weaver, Function parameter passing of COMPONENT INTERFACE only supports basic types, such as int string bool ... Is there any plan for Weaver to support custom parameter types when passing parameters in components. Very much looking forward to adding this feature.",
+      "root_cause": "unclear",
+      "url": "https://github.com/ServiceWeaver/weaver/issues/733"
+    }
+  ],
+  "temporal_post_discontinuation": [
+    {
+      "period": "post_discontinuation",
+      "source": "github_pr",
+      "timestamp": "2025-03-18T00:06:22Z",
+      "author": "User_4dbf6647",
+      "quote": "Bump github.com/containerd/containerd from 1.7.11 to 1.7.27\\n\\nBumps [github.com/containerd/containerd](https://github.com/containerd/containerd) from 1.7.11 to 1.7.27.",
+      "root_cause": "unclear",
+      "resolution": "unknown",
+      "url": "https://github.com/ServiceWeaver/weaver/pull/810"
+    },
+    {
+      "period": "post_discontinuation",
+      "source": "github_issue",
+      "timestamp": "2025-04-16T21:34:51Z",
+      "author": "User_00025b56",
+      "quote": "internal error: package \"slices\" without types was imported from \"github.com/myPkg/pkg/listutil\"\\n\\n\n```go\npackage listutil\n\nimport \"slices\"\n\n// SubtractLists subtracts the elements of the subtract list in the source list. //\n// Parameters:\n// - sourceList: The list from which the elements will be subtracted. // - subtractList: The list that will be subtracted from the source list. //\n// Returns:\n// - A new list that contains the elements of the source list minus the elements of the subtract list. //\n// Explanation:\n//\n// It takes two slices of strings as input: source and subtract.",
+      "root_cause": "unclear",
+      "resolution": "acknowledged_not_fixed",
+      "url": "https://github.com/ServiceWeaver/weaver/issues/812"
+    },
+    {
+      "period": "post_discontinuation",
+      "source": "github_issue",
+      "timestamp": "2025-05-19T13:58:44Z",
+      "author": "User_00025b56",
+      "quote": "Compatible with latest Go version\\n\\nWe need to ensure it works with the latest version of Golang. Can we get some guidance so I can open this final PR before archiving the project?\\n\\n--- Comments ---\\nI have optimized a version that supports the latest version of Go\n\nhttps://github.com/sagoo-cloud/weaver.",
+      "root_cause": "unclear",
+      "resolution": "unknown",
+      "url": "https://github.com/ServiceWeaver/weaver/issues/815"
+    }
+  ],
+  "temporal_decline": [
+    {
+      "period": "decline",
+      "source": "github_pr",
+      "timestamp": "2024-12-12T00:10:18Z",
+      "author": "User_4dbf6647",
+      "quote": "Bump golang.org/x/crypto from 0.23.0 to 0.31.0\\n\\nBumps [golang.org/x/crypto](https://github.com/golang/crypto) from 0.23.0 to 0.31.0.",
+      "root_cause": "unclear",
+      "resolution": "unknown",
+      "url": "https://github.com/ServiceWeaver/weaver/pull/806"
+    },
+    {
+      "period": "decline",
+      "source": "github_issue",
+      "timestamp": "2024-09-06T06:48:40Z",
+      "author": "User_2d69b5f5",
+      "quote": "Improve Hash Algorithm (Sha256 -> xxH3)\\n\\nHello, I'm deeply interested in ServiceWeaver project. And I want to contribute this project. I saw todo at /weaver/runtime/codegen/hash.go \r\n\t// TODO: improve performance:\r\n\t// - do not accumulate everything; hash as we go\r\n\t// - use a non-cryptographically safe hasher\r\n\r\n To Improve hash performance, xxH3 Hash would be perfect for this case. xxHash is an extremely fast non-cryptographic hash algorithm, working at RAM speed limit. More detail on https://xxhash.com/\r\n\r\n\r\n\r\nMy machine is Macbook Pro, 13-inch, M1, 2020\r\n\r\nThese are the benchmark results, and just in case, I also included golang/x/crypto/blake2b for comparison.",
+      "root_cause": "unclear",
+      "resolution": "acknowledged_not_fixed",
+      "url": "https://github.com/ServiceWeaver/weaver/issues/797"
+    },
+    {
+      "period": "decline",
+      "source": "github_issue",
+      "timestamp": "2024-08-07T03:45:32Z",
+      "author": "User_897505d5",
+      "quote": "Is the project still alive. \\n\\nIs the project still alive. Is the idea and direction of the project right. Why didn't anyone answer questions for so long. Are contributors too busy?\\n\\n--- Comments ---\\nHey @wind-c. Feel free to describe in more details what you're trying to do. Otherwise, feel free to ping me on discord and we can discuss in details your issues. We usually do that with people who're trying to adopt weaver and face various issues. .",
+      "root_cause": "unclear",
+      "resolution": "acknowledged_not_fixed",
+      "url": "https://github.com/ServiceWeaver/weaver/issues/790"
+    }
+  ],
+  "temporal_plateau": [
+    {
+      "period": "plateau",
+      "source": "github_pr",
+      "timestamp": "2023-08-15T21:55:59Z",
+      "author": "User_c2b6c4a1",
+      "quote": "Fixed RemoteWeavelet UpdateRoutingInfo bugs.\\n\\nThis PR fixes four bugs in RemoteWeavelet's UpdateRoutingInfo. 1. Before this PR, UpdateRoutingInfo would panic if you passed it a nil RoutingInfo. This PR fixes UpdateRoutingInfo to instead return an error. 2. Recall that a component is either always local or always remote. We don't currently allow a component to switch between the two. This PR adds code to UpdateRoutingInfo to check this. 3. Before this PR, we were using the assignment from one component as the assignment for all components' load collectors. 4. UpdateRoutingInfo updates a resolver, balancer, and load collector.",
+      "root_cause": "unclear",
+      "resolution": "unknown",
+      "url": "https://github.com/ServiceWeaver/weaver/pull/529"
+    },
+    {
+      "period": "plateau",
+      "source": "github_pr",
+      "timestamp": "2023-09-13T22:51:43Z",
+      "author": "User_d6dd8072",
+      "quote": "Combine pipe.Cmd's WPipe and RPipe into a single method.\\n\\nCalls to WPipe and RPipe are always paired, so combine them into one method. The new method returns a struct so that we get good names for the four distinct values needed for the pair of pipes..",
+      "root_cause": "unclear",
+      "resolution": "unknown",
+      "url": "https://github.com/ServiceWeaver/weaver/pull/610"
+    },
+    {
+      "period": "plateau",
+      "source": "github_issue",
+      "timestamp": "2023-10-16T02:44:59Z",
+      "author": "User_c989d76a",
+      "quote": "How to implement a modular-design ERP product similar to Odoo using ServiceWeaver\\n\\nHi, we want to use ServiceWeaver to implement a modular design ERP product similar to Odoo. Is there a way to implement a feature similar to Odoo's dynamic loading/unloading of modules at runtime with ServiceWeaver. We believe that the success of Odoo among its partners and the opensource community is mainly due to its full modular architecture. From the user point of view, this is interesting since it allows to enable/disable features just by installing or uninstalling modules.",
+      "root_cause": "unclear",
+      "resolution": "acknowledged_not_fixed",
+      "url": "https://github.com/ServiceWeaver/weaver/issues/660"
+    }
+  ],
+  "temporal_early_adoption": [
+    {
+      "period": "early_adoption",
+      "source": "github_pr",
+      "timestamp": "2023-03-31T20:49:13Z",
+      "author": "User_c2b6c4a1",
+      "quote": "Tweaked website's page widths and line heights.\\n\\nThis PR tweaks the website's page widths and line heights. Specifically, I narrowed the default page width from 80rem to 65rem. I shrunk the blog posts to 50rem. I also increased the line-height from 1 to 1.5. I also some made some miscellaneous cleanups. I removed some unused CSS classes, fixed some padding issues, etc. | before | after |\r\n| - | - | \r\n| ![before](https://user-images.githubusercontent.com/3654277/229226688-862bdfcf-74c5-44c5-a24d-564fee9ba1d7.png) | ![after](https://user-images.githubusercontent.com/3654277/229226685-40fedc28-d0ab-409f-8dfd-322fae89baa4.png) |\r\n.",
+      "root_cause": "unclear",
+      "resolution": "unknown",
+      "url": "https://github.com/ServiceWeaver/weaver/pull/214"
+    },
+    {
+      "period": "early_adoption",
+      "source": "github_pr",
+      "timestamp": "2023-03-29T12:58:09Z",
+      "author": "User_ec432ecc",
+      "quote": "Enable misspell linter and fix typos\\n\\nThis PR enables `misspell` linter in `golangci-lint` config. Also, correct typos in comments, tests, and error messages..",
+      "root_cause": "unclear",
+      "resolution": "unknown",
+      "url": "https://github.com/ServiceWeaver/weaver/pull/210"
+    },
+    {
+      "period": "early_adoption",
+      "source": "github_pr",
+      "timestamp": "2023-06-15T18:08:27Z",
+      "author": "User_c2b6c4a1",
+      "quote": "Small example fixes.\\n\\n1. I added factors and onlineboutique to `examples_test.go`. Adding chat is hard because it requires a mysql database. 2. I made all examples `log.Fatal` the error returned by `weaver.Run`. Before, there was a mix of doing nothing, using `log.Fatal`, and writing to `os.Stderr`. 3. Quiet `examples_test.go` when -v isn't provided..",
+      "root_cause": "unclear",
+      "resolution": "unknown",
+      "url": "https://github.com/ServiceWeaver/weaver/pull/400"
+    }
+  ],
+  "temporal_pre_launch": [
+    {
+      "period": "pre_launch",
+      "source": "github_pr",
+      "timestamp": "2023-02-17T16:59:27Z",
+      "author": "User_c2b6c4a1",
+      "quote": "Added InstrumentHandlerFunc function.\\n\\nThis PR adds an `InstrumentHandlerFunc` function that is pretty much identical to `InstrumentHandler`, but takes a `func(http.ResponseWriter, *http.Request)` instead of an `http.Handler`..",
+      "root_cause": "unclear",
+      "resolution": "unknown",
+      "url": "https://github.com/ServiceWeaver/weaver/pull/43"
+    },
+    {
+      "period": "pre_launch",
+      "source": "github_pr",
+      "timestamp": "2023-02-14T20:38:21Z",
+      "author": "User_c2b6c4a1",
+      "quote": "Added \"weaver help\" subcommand.\\n\\nThis PR adds a `weaver help` subcommand. For example, `weaver help generate` shows a help message for the `weaver generate command`. The help command takes one of the following forms:\r\n\r\n    weaver help\r\n    weaver help generate\r\n    weaver help <single|multi|ssh>\r\n    weaver help <single|multi|ssh> <subcommand>\r\n    weaver help <external>\r\n\r\nIt does not handle more complex help queries like\r\n\r\n    // Flags aren't supported. weaver help multi profile --type=cpu\r\n\r\n    // Deeper nested subcommands aren't supported. weaver help multi store list\r\n\r\n    // External subcommands aren't supported.",
+      "root_cause": "unclear",
+      "resolution": "unknown",
+      "url": "https://github.com/ServiceWeaver/weaver/pull/24"
+    },
+    {
+      "period": "pre_launch",
+      "source": "github_pr",
+      "timestamp": "2023-02-15T17:59:25Z",
+      "author": "User_c2b6c4a1",
+      "quote": "Added regex filter argument to \"weaver metrics\".\\n\\nThis PR adds a regex argument to `weaver single metrics` and `weaver multi metrics` that filters the set of displayed metrics. $ weaver single metrics\r\n    Show application metrics\r\n\r\n    Usage:\r\n      weaver single metrics [metric regex]\r\n\r\n    Flags:\r\n      -h, --help    Print this help message. Description:\r\n      \"weaver single metrics\" shows the latest value of every metric. You can filter\r\n      metrics by providing a regular expression. Only the metrics with names that\r\n      match the regular expression are shown. The command expects RE2 regular\r\n      expressions, the same used by the built-in regexp module. See \"go doc\r\n      regexp/syntax\" for details.",
+      "root_cause": "unclear",
+      "resolution": "unknown",
+      "url": "https://github.com/ServiceWeaver/weaver/pull/28"
+    }
+  ]
+}
